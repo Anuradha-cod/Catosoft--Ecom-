@@ -1,0 +1,119 @@
+.App {
+  text-align: left;
+  background-color: #eeeeee;
+}
+.container {
+  padding: 0 10px;
+}
+
+.input {
+  outline: none;
+}
+
+.select {
+  background-color: #464b4d;
+  border: 1px solid gray;
+  width: 50;
+}
+
+.nav {
+  /* display: flex; */
+  border: 1px solid grey;
+  background-color: rgb(70, 68, 68);
+  text-decoration: none;
+  list-style-type: none;
+  height: 58px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+/* .nav:hover{
+  background-color: #1c2224;
+} */
+
+.img-header {
+  /* display: flex; */
+  /* margin: 0px;
+  padding: 0px; */
+  height: 90px;
+  width: 100wh;
+  border: 1px solid grey;
+  background-color: #ffffff;
+}
+
+.item {
+  margin: 0px 10px;
+}
+.our-link {
+  border: 1px solid black;
+  background-color: #ec6024;
+  height: 10%;
+  /* width: 15%; */
+  margin-bottom: 0%;
+  border-radius: 10px;
+  color: white;
+}
+.our-link2 {
+  border: 1px solid black;
+  background-color: #ec6024;
+  height: 10%;
+  /* width: 15%; */
+  margin-top: 0%;
+  border-radius: 10px;
+  color: white;
+}
+.item-list {
+  display: flex;
+  flex-direction: row;
+  background-color: wheat;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-list-container {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.footer-g-para {
+  margin-left: 15px;
+}
+
+/* ------media Query--------- */
+@media screen and (max-width: 425px) {
+  .footer-g-para {
+    margin-left: 15px;
+  }
+
+  .carousel {
+    margin: 0 5%;
+    padding: 1%;
+    background-color: white;
+    height: 30% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .bank-box1 {
+    width: 200px;
+    height: 150px;
+    border: 1px solid gray;
+    background-color: rgb(22, 117, 177);
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 8px;
+  }
+}
+
+.alert {
+  display: flex;
+
+  width: 200px;
+  height: auto;
+  position: fixed;
+  background-color: rgb(236, 86, 63);
+  color: black;
+  z-index: 1000;
+  margin: 20% 20% !important;
+}

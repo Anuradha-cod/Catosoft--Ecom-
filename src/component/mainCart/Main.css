@@ -1,0 +1,220 @@
+.mainlist {
+  display: flex;
+  height: 260px;
+  overflow-x: auto;
+  white-space: nowrap;
+  /* background-color: black; */
+}
+.mainList-fresh {
+  display: flex;
+  margin-bottom: -10px;
+}
+.mainList-fresh-h2 {
+  margin-left: 980px;
+  color: #db6400;
+  border: 1px solid rgb(218, 215, 215);
+  width: 65px;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.main-container {
+  border: 1px solid rgb(231, 228, 228);
+  margin-right: 20px;
+  width: 300px;
+  height: 240px;
+  margin-top: 0px;
+  margin-left: 10px;
+  /* padding: 5px; */
+  /* margin-right: 2px; */
+  margin-left: 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #959595;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.main-cont-h {
+  color: black;
+  margin-bottom: -5px;
+  margin-left: 10px;
+}
+.img-main {
+  width: 150px;
+  height: 150px;
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-bottom: -30px;
+  color: #db6400;
+}
+.main-para {
+  color: #959595;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-top: -2px;
+  margin-left: 10px;
+
+  /* margin-bottom: -2px; */
+}
+.main-contain-seeAll {
+  height: 239px;
+  width: 430px;
+  border: 1px solid rgb(238, 231, 231);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 4px;
+}
+.main-contain-seeAll-h {
+  margin-left: 40px;
+  margin-right: 80px;
+  color: #db6400;
+}
+/* ---------------------------- */
+
+.mainbtn {
+  background-color: #db6400;
+  border: none;
+  height: 30px;
+  width: 95%;
+  color: white;
+  margin-left: 4px;
+  border-radius: 5px;
+}
+
+.cntrlbtn {
+  display: flex;
+  margin: 2px;
+}
+
+.addbtn {
+  background-color: #db6400;
+  color: white;
+  border: none;
+  height: 33px;
+}
+.subBtn {
+  background-color: #db6400;
+  color: white;
+  border: none;
+  height: 33px;
+}
+
+.spanCount {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+@media screen and (max-width: 425px) {
+  .mainlist {
+    display: flex;
+    height: 150px;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* background-color: black; */
+  }
+
+  .main-container {
+    border: 1px solid rgb(231, 228, 228);
+    width: 100px;
+    height: 142px;
+    margin-top: 2px;
+    /* padding: 5px; */
+    margin-right: -0px;
+    margin-left: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #959595;
+  }
+
+  .main-cont-h {
+    color: black;
+    /* margin-bottom: 2px; */
+  }
+  .img-main {
+    width: 50px;
+    height: 60px;
+    margin-left: 10px;
+    /* margin-bottom: -10px; */
+  }
+  .main-para {
+    color: #959595;
+    margin-right: 0px;
+    margin-bottom: -2px;
+    margin-top: -2px;
+    /* margin-top: -5px; */
+    /* margin-bottom: 10px; */
+  }
+  /* ---------------------------- */
+
+  .mainbtn {
+    background-color: #db6400;
+    border: none;
+    height: 25px;
+    width: 100%;
+    color: white;
+    margin-left: -1px;
+  }
+
+  .cntrlbtn {
+    display: flex;
+    margin: 2px;
+  }
+
+  .addbtn {
+    background-color: #db6400;
+    color: white;
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .subBtn {
+    background-color: #db6400;
+    color: white;
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .spanCount {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+  .mainList-fresh-h2 {
+    margin-left: 100px;
+    color: #db6400;
+    border: 1px solid rgb(218, 215, 215);
+    width: 65px;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .main-contain-seeAll {
+    height: 186px;
+    width: 100px;
+    border: 1px solid rgb(238, 231, 231);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  .main-contain-seeAll-h {
+    /* margin-left: 40px;
+    margin-right: 80px; */
+    color: #db6400;
+    font-size: 10px;
+  }
+}
