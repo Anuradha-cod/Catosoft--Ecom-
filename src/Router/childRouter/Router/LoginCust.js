@@ -1,35 +1,20 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./Router.css";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-import { login } from "../../../Redux/Action/auth";
-
-import { connect } from "react-redux";
-// import {isAu} from 'module'
-
-const LoginCust = ({ login, isAuthenticated }) => {
+const LoginCust = ({}) => {
   const [formData, setformData] = useState({
     email: "",
     password: "",
   });
   const history = useHistory();
   const { email, password } = formData;
-  const handlClick = async (e) => {
-    // history.push("/");
-
-    e.preventDefault();
-    login(email, password);
-  };
+  const handlClick = async (e) => {};
 
   const handleChange = (e) => {
     setformData({ ...formData, [e.target.name]: e.target.value });
   };
-  // console.log(formData);
 
-  if (isAuthenticated) {
-    return <Redirect to="/" />;
-  }
   return (
     <div className="loginDetail">
       <div className="login-div">
@@ -61,11 +46,5 @@ const LoginCust = ({ login, isAuthenticated }) => {
     </div>
   );
 };
-// const mapStateToProps =(...state) => {
-//   isAuthenticated: state.auth.isAuthenticated,
-// };
-const mapStateToProps = (state) => ({
-  isAuthenticated: state.auth.isAuthenticated,
-});
 
-export default connect(mapStateToProps, { login })(LoginCust);
+export default LoginCust;

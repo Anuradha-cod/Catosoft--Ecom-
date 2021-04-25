@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Redirect, useHistory } from "react-router-dom";
-import { register } from "../../../Redux/Action/auth";
 import "./Router.css";
-import { connect } from "react-redux";
 
-const Register = ({ register, isAuthenticated }) => {
+const Register = ({}) => {
   const [formData, setformData] = useState({
     name: "",
     email: "",
@@ -15,18 +13,10 @@ const Register = ({ register, isAuthenticated }) => {
   const handlePush = () => {
     history.push("/login");
   };
-  const handlClick = (e) => {
-    e.preventDefault();
-    register(name, email, password);
-  };
 
   const handleChange = (e) => {
     setformData({ ...formData, [e.target.name]: e.target.value });
   };
-  if (isAuthenticated) {
-    return <Redirect to="/" />;
-  }
-  console.log(formData);
   return (
     <div className="register">
       <div className="register-div">
@@ -72,7 +62,7 @@ const Register = ({ register, isAuthenticated }) => {
               value={password2}
             />
           </div>
-          <button onClick={handlClick}>Submit</button>
+          <button>Submit</button>
           <span>
             <p>Already a users?</p>
             <button onClick={handlePush} className="register-btn">
@@ -84,10 +74,5 @@ const Register = ({ register, isAuthenticated }) => {
     </div>
   );
 };
-const mapStateToProps = (state) => ({
-  isAuthenticated: state.auth.isAuthenticated,
-});
-const mapDispatchToProps = {
-  register,
-};
-export default connect(mapStateToProps, mapDispatchToProps)(Register);
+
+export default Register;

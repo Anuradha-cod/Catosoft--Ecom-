@@ -36,15 +36,12 @@
 @media screen and (max-width: 725px) {
   .navbarlist-div {
     display: flex;
-
     margin-top: 60px;
     height: 140px;
     margin-bottom: 10px;
     overflow-x: auto;
     margin-left: -10px;
     font-size: 11px;
-
-    /* white-space: nowrap */
   }
 
   .nav-list {
@@ -71,8 +68,5 @@
     margin-bottom: 0%;
     height: 60px;
     margin-left: 0px;
-  }
-  .img-clas {
-    /* margin-bottom: -30px; */
   }
 }

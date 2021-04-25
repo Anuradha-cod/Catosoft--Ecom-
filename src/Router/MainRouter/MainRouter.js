@@ -5,8 +5,6 @@ import LoginCust from "../../Router/childRouter/Router/LoginCust";
 import Register from "../../Router/childRouter/Router/Register";
 import SeeAllProduc from "../../Router/childRouter/Router/SeeAllProduc";
 import Header from "../../component/header/Header";
-import PaymentCheckOut from "../../Router/childRouter/Router/PaymentCheckOut";
-import PrivatRouter from "./PrivatRouter";
 const MainRouter = () => {
   return (
     <>
@@ -16,14 +14,8 @@ const MainRouter = () => {
         <Route path="/register" component={() => <Register />} />
         <Route path="/login" component={() => <LoginCust />} />
         <Route path="/seeAllProduc" component={() => <SeeAllProduc />} />
-        <PrivatRouter
-          path="/paymentCheckOut"
-          component={() => <PaymentCheckOut />}
-        />
       </Switch>
     </>
-    // )}
-    // </AppConsumer>
   );
 };
 

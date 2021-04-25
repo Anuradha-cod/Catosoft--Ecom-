@@ -20,13 +20,10 @@
 
   /*=========== Logo=======*/
   .logo {
-    /* height: 60px; */
     width: 50px;
 
-    /* border: 1px solid rgb(109, 108, 108); */
     background-color: #464b4d;
     display: inline-block;
-    /* margin-top: -2px; */
   }
   .logo:hover {
     background-color: #1c2224;
@@ -42,73 +39,6 @@
     display: flex;
   }
 
-  /*-----LOCATION--------  */
-  .location {
-    /* min-width: 150px; */
-    background-color: #464b4d;
-    cursor: pointer;
-  }
-  .location:hover {
-    background-color: #1c2224;
-  }
-  .location-para {
-    margin: 0 20px;
-    /* height: 50%; */
-    line-height: 60px;
-  }
-  /* ---- LOCATIONCONTENT----- */
-
-  /* .header_location{
-position: relative;
-left: 0;
-
-} */
-
-  .headerlocation-loc {
-    border: 1px solid gray;
-    width: 220px;
-    background-color: #f5f3d8;
-    position: absolute;
-    z-index: 2000;
-    top: 60px;
-    left: 100px;
-    display: flex;
-    cursor: pointer;
-  }
-  .headerlocation-loc-h {
-    color: black;
-    margin-top: -10px;
-    margin-left: 10px;
-  }
-  .headerlocation-loc-h2 {
-    color: black;
-    margin-top: -10px;
-    margin-left: 10px;
-  }
-
-  .location-h {
-    background-color: white;
-  }
-  .header-img-loc {
-    height: 70px;
-    width: 70px;
-    margin: 20px;
-    color: white;
-    border-radius: 20px;
-    border: 1px solid gray;
-    background-color: white;
-    margin-bottom: -1px;
-  }
-  .header-img-loc2 {
-    height: 70px;
-    width: 70px;
-    margin: 20px;
-    color: white;
-    border-radius: 20px;
-    border: 1px solid gray;
-    background-color: white;
-    margin-bottom: -1px;
-  }
   /* ----- SEARCH------- */
   .search {
     margin: 12px 0;
@@ -125,22 +55,18 @@ left: 0;
     top: 1px;
     right: 380px;
     width: 420px;
-    /* border: 1px solid rgb(250, 244, 244); */
     background-color: white;
     margin-top: 50px;
     border-radius: 1%;
     color: black;
     overflow-y: auto;
-    /* margin-left: -200px; */
   }
 
   .right-nav {
-    /* display: none; */
     color: white;
     margin-left: 20px;
     width: 160px;
     right: 100px;
-    /* border: 1px solid grey; */
   }
   .right-nav:hover {
     background-color: #1c2224;
@@ -161,8 +87,6 @@ left: 0;
     margin-top: -2px;
     border-top-right-radius: 2px;
     cursor: pointer;
-
-    /* text-align:justify; */
   }
 
   .search-content-div {
@@ -384,17 +308,18 @@ left: 0;
     justify-content: center;
     width: 80%;
   }
-}
-.menubar {
-  display: none;
-}
 
-.menubar-content {
-  display: none;
-}
+  .menubar {
+    display: none;
+  }
 
-.flex-search-category {
-  display: none;
+  .menubar-content {
+    display: none;
+  }
+
+  .flex-search-category {
+    display: none;
+  }
 }
 /* ==================================================Media============================================================================== */
 /* --------------------------------------------------Media ---------------------------------------------------------------------
@@ -441,84 +366,12 @@ left: 0;
     padding: 0 20px;
     margin: 0 -20px;
   }
-
   /* --------------------logo------------------------------- */
   .logo {
     display: none;
   }
 
   /*----------------------------------------LOCATION--------  */
-  .location {
-    /* min-width: 150px; */
-    background-color: #464b4d;
-    cursor: pointer;
-    margin-left: 50px;
-  }
-  .location:hover {
-    background-color: #1c2224;
-  }
-  .location-para {
-    margin: 0 40px;
-    /* height: 50%; */
-    line-height: 40px;
-  }
-
-  .headerlocation-loc {
-    border: 1px solid gray;
-    width: 100px;
-    background-color: #f5f3d8;
-    position: absolute;
-    z-index: 2000;
-    top: 60px;
-    left: 30px;
-    display: flex;
-    cursor: pointer;
-    height: 60px;
-  }
-
-  .header-img-loc {
-    height: 30px;
-    width: 30px;
-    margin: 20px;
-    color: white;
-    border-radius: 20px;
-    border: 1px solid gray;
-    background-color: white;
-    margin-bottom: -1px;
-    margin-left: 5px;
-    margin-top: 5px;
-  }
-  .header-img-loc2 {
-    height: 30px;
-    width: 30px;
-    margin: 20px;
-    color: white;
-    border-radius: 20px;
-    border: 1px solid gray;
-    background-color: white;
-    margin-bottom: -1px;
-    margin-left: 0px;
-    margin-top: 5px;
-  }
-
-  .headerlocation-loc-h {
-    color: black;
-    font-size: 8px;
-    margin-top: 0px;
-    /* margin-top: -10px; */
-    margin-left: -0px;
-  }
-
-  .headerlocation-loc-h2 {
-    color: black;
-    font-size: 8px;
-    margin-top: -0px;
-    /* margin-top: -10px; */
-    margin-left: -0px;
-  }
-  .location-h {
-    background-color: white;
-  }
 
   /* --------------------------------------cart---------------------------------- */
 
@@ -640,8 +493,6 @@ left: 0;
   .mycartcontain2-img {
     height: 50px;
     width: 60px;
-    /* background-color: #e2dede; */
-    /* margin-top: -3px; */
   }
   .mycartcontainDiv {
     display: flex;
