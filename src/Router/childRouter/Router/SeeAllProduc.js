@@ -7,7 +7,6 @@ const SeeAllProduc = () => {
   return (
     <div className="seeAllProduct">
       <SeeAllNav />
-
       <SeeAllMain />
     </div>
   );
