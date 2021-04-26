@@ -1,13 +1,16 @@
-import React from 'react'
-import { FaChevronDown, FaCartPlus, FaSearch  } from "react-icons/fa";
+import React from "react";
 
-const Search =({setSearchHide}) =>{
-    return (
-        <div className="search-div">
-            <input onClick={() =>setSearchHide(true)} className="search" placeholder="Search for products" /> 
-        </div>
-    )
-}
+const Search = ({ setSearchHide, setSearchTerm }) => {
+  return (
+    <div className="search-div">
+      <input
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onClick={() => setSearchHide(true)}
+        className="search"
+        placeholder="Search for products"
+      />
+    </div>
+  );
+};
 
-export default Search
- 
+export default Search;

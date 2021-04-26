@@ -12,9 +12,15 @@ import MenubarContent from "./MenubarContent";
 
 const Header = ({ context }) => {
   const [searchHide, setSearchHide] = useState(false);
+  // const [viewData, setViewData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   const [login, setLogin] = useState(false);
   const [myCart, setMyCart] = useState(false);
   const [menubarVisibility, setMenubarVisibility] = useState(false);
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
 
   return (
     <div className="header-flex container">
@@ -34,9 +40,12 @@ const Header = ({ context }) => {
         </div>
 
         <div className="flex-search">
-          <Search setSearchHide={setSearchHide} context={context} />
+          <Search setSearchHide={setSearchHide} setSearchTerm={setSearchTerm} />
           {searchHide && (
-            <SearchContent setSearchHide={setSearchHide} context={context} />
+            <SearchContent
+              setSearchHide={setSearchHide}
+              searchTerm={searchTerm}
+            />
           )}
         </div>
       </div>
